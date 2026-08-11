@@ -1,0 +1,1 @@
+print("Phishing URL Detection Project Started!")
