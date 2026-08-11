@@ -20,4 +20,15 @@ phishing or legitimate and provides explanations for its predictions.
 
 ## Project Status
 
-Day 1 - Project setup
+Day 2 - Dataset analysis completed
+
+## Dataset
+
+PhiUSIIL Phishing URL Dataset
+
+- 235,795 URL records
+- 56 columns
+- 0 missing values
+- 0 duplicate records
+- 100,945 phishing URLs
+- 134,850 legitimate URLs
