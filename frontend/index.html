@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PhishGuard AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <div class="background-grid"></div>
+
+    <header>
+        <div class="logo">
+            <div class="shield">🛡</div>
+            <div>
+                <h2>PhishGuard <span>AI</span></h2>
+                <p>INTELLIGENT URL SECURITY</p>
+            </div>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            AI ENGINE ONLINE
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <div class="badge">
+                ⚡ XGBOOST · MACHINE LEARNING · REAL-TIME ANALYSIS
+            </div>
+
+            <h1>
+                Is this URL
+                <span>safe?</span>
+            </h1>
+
+            <p class="subtitle">
+                Detect phishing websites before they become a threat.
+                Our AI analyzes URL characteristics and identifies suspicious patterns.
+            </p>
+
+
+            <div class="scanner">
+
+                <div class="input-wrapper">
+
+                    <span class="link-icon">🔗</span>
+
+                    <input
+                        type="text"
+                        id="urlInput"
+                        placeholder="Paste a suspicious URL here..."
+                    >
+
+                    <button id="scanBtn">
+                        <span>SCAN URL</span>
+                        <span class="arrow">→</span>
+                    </button>
+
+                </div>
+
+                <p class="hint">
+                    🔒 Your URL is analyzed securely using our machine learning model.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- Loading -->
+
+        <section id="loading" class="loading hidden">
+
+            <div class="scanner-ring"></div>
+
+            <h3>Analyzing URL...</h3>
+
+            <p id="loadingText">
+                Extracting URL features
+            </p>
+
+        </section>
+
+
+        <!-- Result -->
+
+        <section id="result" class="result hidden">
+
+            <div class="result-header">
+
+                <div>
+                    <p class="small-title">THREAT ANALYSIS</p>
+
+                    <h2 id="resultTitle">
+                        URL Analysis Complete
+                    </h2>
+                </div>
+
+                <div id="resultIcon" class="result-icon">
+                    ✓
+                </div>
+
+            </div>
+
+
+            <div class="analyzed-url">
+
+                <span>ANALYZED URL</span>
+
+                <p id="resultUrl"></p>
+
+            </div>
+
+
+            <div class="risk-section">
+
+                <div class="risk-score">
+
+                    <div class="score-circle">
+
+                        <div>
+                            <strong id="riskScore">0</strong>
+                            <small>%</small>
+                        </div>
+
+                    </div>
+
+                    <p>THREAT CONFIDENCE</p>
+
+                </div>
+
+
+                <div class="probabilities">
+
+                    <div class="probability">
+
+                        <div class="probability-label">
+                            <span>Phishing</span>
+                            <strong id="phishingProbability">0%</strong>
+                        </div>
+
+                        <div class="bar">
+                            <div
+                                id="phishingBar"
+                                class="bar-fill phishing"
+                            ></div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="probability">
+
+                        <div class="probability-label">
+                            <span>Legitimate</span>
+                            <strong id="legitimateProbability">0%</strong>
+                        </div>
+
+                        <div class="bar">
+                            <div
+                                id="legitimateBar"
+                                class="bar-fill legitimate"
+                            ></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="recommendation" id="recommendation">
+
+                <span>💡</span>
+
+                <div>
+                    <strong>Security Recommendation</strong>
+
+                    <p id="recommendationText"></p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Feature cards -->
+
+        <section class="features">
+
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>AI Powered</h3>
+                <p>
+                    XGBoost machine learning analyzes URL patterns.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Real-Time</h3>
+                <p>
+                    Get predictions instantly through our API.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>18 Features</h3>
+                <p>
+                    URL characteristics are extracted automatically.
+                </p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            PhishGuard AI · Machine Learning Cybersecurity System
+        </p>
+
+        <span>
+            MODEL: XGBOOST · API: FASTAPI
+        </span>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
