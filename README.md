@@ -1,5 +1,11 @@
 # 🛡️ PhishGuard AI
 
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![XGBoost](https://img.shields.io/badge/Model-XGBoost-orange)
+![FastAPI](https://img.shields.io/badge/API-FastAPI-009688)
+![SHAP](https://img.shields.io/badge/XAI-SHAP-purple)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+
 ## Explainable AI-Based Phishing URL Detection System
 
 PhishGuard AI is an end-to-end machine learning cybersecurity application designed to detect whether a given URL is **Phishing** or **Legitimate**.
